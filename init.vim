@@ -65,6 +65,7 @@ Plug 'https://github.com/tpope/vim-commentary'                        " vim-comm
 Plug 'https://github.com/airblade/vim-gitgutter'                      " git
 Plug 'nvim-lua/plenary.nvim'                                          " telescope dependency
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }           " telescope
+Plug 'cdelledonne/vim-cmake'                                          " vim-cmake
 
 call plug#end()
 
