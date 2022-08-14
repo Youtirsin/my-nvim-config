@@ -61,11 +61,11 @@ Plug 'https://github.com/rafi/awesome-vim-colorschemes'								" themes
 Plug 'https://github.com/vim-airline/vim-airline'                     " vim-airline
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}           " tree-sitter
 Plug 'voldikss/vim-floaterm'                                          " vim-term
-Plug 'https://github.com/tpope/vim-commentary'                        " vim-commentary
+" Plug 'https://github.com/tpope/vim-commentary'                        " vim-commentary
+Plug 'numToStr/Comment.nvim'                                          " for comment
 Plug 'https://github.com/airblade/vim-gitgutter'                      " git
 Plug 'nvim-lua/plenary.nvim'                                          " telescope dependency
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }           " telescope
-Plug 'cdelledonne/vim-cmake'                                          " vim-cmake
 
 call plug#end()
 
@@ -82,7 +82,8 @@ let g:floaterm_keymap_new     = '<Leader>tn'
 let g:floaterm_keymap_prev    = '<F7>'
 let g:floaterm_keymap_next    = '<F8>'
 let g:floaterm_keymap_toggle  = '<Leader>tt'
-let g:floaterm_shell          = 'powershell'
+" for windows
+" let g:floaterm_shell          = 'powershell'
 let g:floaterm_wintype        = 'split'
 let g:floaterm_height         = 0.4
 
@@ -130,17 +131,10 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+require('Comment').setup()
 EOF
 
 " coc configurations
-" installed plugins
-"   coc-vimlsp
-"   coc-snippets
-"   coc-pairs
-"   coc-marketplace
-"   coc-explorer
-"   coc-json
-"   coc-clangd
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
