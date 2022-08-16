@@ -82,9 +82,9 @@ let g:airline#extensions#tabline#formatter  = 'unique_tail'
 let g:floaterm_keymap_new     = '<Leader>tn'
 let g:floaterm_keymap_prev    = '<F7>'
 let g:floaterm_keymap_next    = '<F8>'
-let g:floaterm_keymap_toggle  = '<Leader>tt'
+let g:floaterm_keymap_toggle  = '<Leader>`'
 " for windows
-" let g:floaterm_shell          = 'powershell'
+let g:floaterm_shell          = 'powershell'
 let g:floaterm_wintype        = 'split'
 let g:floaterm_height         = 0.4
 
