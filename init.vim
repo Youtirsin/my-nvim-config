@@ -58,10 +58,11 @@ call plug#begin()
 
 Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}		" coc
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'								" themes
-Plug 'https://github.com/vim-airline/vim-airline'                     " vim-airline
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }                    " themes
+Plug 'https://github.com/vim-airline/vim-airline'                     " vim airline
+Plug 'vim-airline/vim-airline-themes'                                 " vim airline themes
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}           " tree-sitter
 Plug 'voldikss/vim-floaterm'                                          " vim-term
-" Plug 'https://github.com/tpope/vim-commentary'                        " vim-commentary
 Plug 'numToStr/Comment.nvim'                                          " for comment
 Plug 'https://github.com/airblade/vim-gitgutter'                      " git
 Plug 'nvim-lua/plenary.nvim'                                          " telescope dependency
@@ -70,7 +71,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }           " telescop
 call plug#end()
 
 " colorschemes
-colorscheme onedark
+colorscheme tokyonight
 
 " airline theme
 let g:airline#extensions#tabline#enabled    = 1
