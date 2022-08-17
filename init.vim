@@ -67,6 +67,7 @@ Plug 'numToStr/Comment.nvim'                                          " for comm
 Plug 'https://github.com/airblade/vim-gitgutter'                      " git
 Plug 'nvim-lua/plenary.nvim'                                          " telescope dependency
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }           " telescope
+Plug 'lukas-reineke/indent-blankline.nvim'                            " indent line
 
 call plug#end()
 
@@ -84,7 +85,7 @@ let g:floaterm_keymap_prev    = '<F7>'
 let g:floaterm_keymap_next    = '<F8>'
 let g:floaterm_keymap_toggle  = '<Leader>`'
 " for windows
-let g:floaterm_shell          = 'powershell'
+" let g:floaterm_shell          = 'powershell'
 let g:floaterm_wintype        = 'split'
 let g:floaterm_height         = 0.4
 
