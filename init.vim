@@ -62,9 +62,7 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }                    " themes
 Plug 'https://github.com/vim-airline/vim-airline'                     " vim airline
 Plug 'vim-airline/vim-airline-themes'                                 " vim airline themes
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}           " tree-sitter
-Plug 'voldikss/vim-floaterm'                                          " vim-term
 Plug 'numToStr/Comment.nvim'                                          " for comment
-Plug 'https://github.com/airblade/vim-gitgutter'                      " git
 Plug 'nvim-lua/plenary.nvim'                                          " telescope dependency
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }           " telescope
 Plug 'lukas-reineke/indent-blankline.nvim'                            " indent line
@@ -77,21 +75,6 @@ colorscheme tokyonight
 " airline theme
 let g:airline#extensions#tabline#enabled    = 1
 let g:airline#extensions#tabline#formatter  = 'unique_tail'
-
-" vim-term configuration
-" keymaps
-let g:floaterm_keymap_new     = '<Leader>tn'
-let g:floaterm_keymap_prev    = '<F7>'
-let g:floaterm_keymap_next    = '<F8>'
-let g:floaterm_keymap_toggle  = '<Leader>`'
-" for windows
-" let g:floaterm_shell          = 'powershell'
-let g:floaterm_wintype        = 'split'
-let g:floaterm_height         = 0.4
-
-" vim gitgutter
-" This path probably won't work
-" let g:gitgutter_git_executable = 'C:\Program Files\Git\bin\git.exe'
 
 " telescope
 " Find files using Telescope command-line sugar.
